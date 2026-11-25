@@ -1,0 +1,31 @@
+:root {
+  color-scheme: light dark;
+  --paper: #f5f2e8;
+  --ink: #202f29;
+  --leaf: #45634b;
+  --rule: #9ca99a;
+  font-family: Baskerville, "Palatino Linotype", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #18241e; --ink: #ecebdc; --leaf: #b0cfab; --rule: #687e6e; }
+}
+* { box-sizing: border-box; }
+body { margin: auto; max-width: 75rem; padding: 0 clamp(1.2rem, 7vw, 6rem); background: var(--paper); color: var(--ink); }
+nav, footer, h3 { font: 1rem/1.5 system-ui, sans-serif; }
+nav, footer { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding: 1.3rem 0; }
+header, #book { border-bottom: 1px solid var(--rule); }
+a { color: var(--leaf); text-underline-offset: .25em; }
+nav a { padding: .35rem 0; }
+:focus-visible { outline: 3px solid var(--leaf); outline-offset: 4px; }
+.skip { position: absolute; left: 1rem; top: -8rem; background: var(--paper); padding: .6rem; }
+.skip:focus { top: .3rem; }
+h1, h2 { font-weight: 400; text-wrap: balance; }
+h1 { max-width: 15ch; font-size: clamp(2.65rem, 8.4vw, 7rem); line-height: 1.01; letter-spacing: -.045em; margin: .85em 0; }
+em, h3 { color: var(--leaf); }
+h2 { font-size: clamp(1.7rem, 3.8vw, 3rem); line-height: 1.13; }
+#book { border-top: 1px solid var(--rule); padding: 1rem 0 3rem; }
+article { margin-left: clamp(0rem, 8vw, 7rem); max-width: 42rem; }
+article p { font-size: clamp(1.38rem, 2.5vw, 2rem); line-height: 1.45; }
+.pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1rem 4rem; padding: 1rem 0 3rem; }
+.pair p { font-size: 1.2rem; line-height: 1.55; }
+footer { border-top: 1px solid var(--rule); justify-content: space-between; }

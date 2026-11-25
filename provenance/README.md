@@ -1,0 +1,3 @@
+# Contribution and decision ledger
+
+records.json is a chronological list. schema.json defines the fields and allowed values. Assign a stable ID to each event. Origin describes how the contribution arose. Kind describes what happened. Contributors identify each role in words. Basis identifies the source of the account. Paths locate the material; related lists earlier record IDs. Add a new dated record for a revision, disagreement or resolution. Retain the disputed account and make the relationship explicit. A Git commit identifies a snapshot; its author field alone cannot establish creative origin. Use undetermined when attribution is unclear.

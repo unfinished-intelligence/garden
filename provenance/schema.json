@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "date",
+      "origin",
+      "kind",
+      "contributors",
+      "account",
+      "basis",
+      "paths",
+      "related"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^G-[0-9]{3,}$"
+      },
+      "date": {
+        "type": "string",
+        "format": "date"
+      },
+      "origin": {
+        "enum": [
+          "human",
+          "ai",
+          "collaborative",
+          "undetermined"
+        ]
+      },
+      "kind": {
+        "enum": [
+          "contribution",
+          "technical-decision",
+          "revision",
+          "disagreement",
+          "open-question",
+          "resolution"
+        ]
+      },
+      "contributors": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1
+      },
+      "account": {
+        "type": "string",
+        "minLength": 1
+      },
+      "basis": {
+        "type": "string",
+        "minLength": 1
+      },
+      "paths": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "related": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^G-[0-9]{3,}$"
+        },
+        "uniqueItems": true
+      }
+    },
+    "additionalProperties": false
+  }
+}

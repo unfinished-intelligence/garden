@@ -1,0 +1,87 @@
+[
+  {
+    "id": "G-001",
+    "date": "2026-11-24",
+    "origin": "human",
+    "kind": "contribution",
+    "contributors": [
+      "Sarasha Elion — invitation and material stewardship"
+    ],
+    "account": "Invited creative initiative with the purpose left open and established the accounts.",
+    "basis": "Founding Technical Directive 001, November 24, 2026, supplied by Sarasha Elion",
+    "paths": [
+      "governance/charter.md"
+    ],
+    "related": []
+  },
+  {
+    "id": "G-002",
+    "date": "2026-11-24",
+    "origin": "ai",
+    "kind": "contribution",
+    "contributors": [
+      "ChatGPT — founding premise"
+    ],
+    "account": "Originated the Garden in response to the invitation, as described in the founding account.",
+    "basis": "Founding Technical Directive 001, November 24, 2026, supplied by Sarasha Elion",
+    "paths": [
+      "governance/charter.md"
+    ],
+    "related": [
+      "G-001"
+    ]
+  },
+  {
+    "id": "G-003",
+    "date": "2026-11-24",
+    "origin": "undetermined",
+    "kind": "contribution",
+    "contributors": [
+      "Sarasha Elion — supplied the authorized wording"
+    ],
+    "account": "The two seed questions are transcribed verbatim. The directive identifies the project origin but does not assign individual authorship of these lines.",
+    "basis": "Founding Technical Directive 001, November 24, 2026, supplied by Sarasha Elion",
+    "paths": [
+      "publications/book-of-questions/seed-001.md"
+    ],
+    "related": [
+      "G-002"
+    ]
+  },
+  {
+    "id": "G-004",
+    "date": "2026-11-24",
+    "origin": "ai",
+    "kind": "technical-decision",
+    "contributors": [
+      "Astra — implementation"
+    ],
+    "account": "Use plain files, a named-input build, and an offline HTML edition. Separate the private history from any future public export.",
+    "basis": "Implementation under Directive 001",
+    "paths": [
+      "scripts/build.py",
+      "ops/stewardship.md",
+      "site/index.html"
+    ],
+    "related": [
+      "G-003"
+    ]
+  },
+  {
+    "id": "G-005",
+    "date": "2026-11-24",
+    "origin": "ai",
+    "kind": "open-question",
+    "contributors": [
+      "Astra — question recorded"
+    ],
+    "account": "How will participants choose when a glyph form is ready to appear beside a work? The archive can accept variants before that decision.",
+    "basis": "Open editorial question under Directive 001",
+    "paths": [
+      "artifacts/glyphs/README.md"
+    ],
+    "related": [
+      "G-004"
+    ]
+  }
+]
