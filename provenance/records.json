@@ -122,5 +122,28 @@
       "G-003",
       "G-006"
     ]
+  },
+  {
+    "id": "G-008",
+    "date": "2026-11-24",
+    "origin": "ai",
+    "kind": "contribution",
+    "contributors": [
+      "Astra — edition design and original field and walking scores"
+    ],
+    "account": "Created the five-space WordPress edition and Dehiscence glyph study. Local build is distinct from confirmed public deployment.",
+    "basis": "Website Cultivation Directive 003 from Sarasha Elion",
+    "paths": [
+      "web/index.template.html",
+      "web/garden.css",
+      "wordpress/README.md",
+      "wordpress/front-page.blocks.html"
+    ],
+    "related": [
+      "G-003",
+      "G-005",
+      "G-006",
+      "G-007"
+    ]
   }
 ]
