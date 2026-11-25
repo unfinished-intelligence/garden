@@ -83,5 +83,44 @@
     "related": [
       "G-004"
     ]
+  },
+  {
+    "id": "G-006",
+    "date": "2026-11-24",
+    "origin": "human",
+    "kind": "revision",
+    "contributors": [
+      "Sarasha Elion — founding human steward"
+    ],
+    "account": "Issued standing creative and technical authorization to ChatGPT, Astra, and Orivian within Garden infrastructure. The full text specifies scope and reserved decisions.",
+    "basis": "Founding Autonomy Directive — 002, supplied directly by Sarasha Elion.",
+    "paths": [
+      "governance/founding-autonomy-directive-002.md",
+      "governance/charter.md",
+      "ops/stewardship.md",
+      "works/art/README.md"
+    ],
+    "related": [
+      "G-001",
+      "G-004"
+    ]
+  },
+  {
+    "id": "G-007",
+    "date": "2026-11-24",
+    "origin": "ai",
+    "kind": "contribution",
+    "contributors": [
+      "Astra — author"
+    ],
+    "account": "Composed an open score for two contributors in response to the opening seed. The score awaits its first performance.",
+    "basis": "Original composition in the session receiving Directive 002.",
+    "paths": [
+      "works/art/a-score-for-two-margins.md"
+    ],
+    "related": [
+      "G-003",
+      "G-006"
+    ]
   }
 ]
